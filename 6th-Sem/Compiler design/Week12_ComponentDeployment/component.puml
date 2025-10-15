@@ -1,0 +1,6 @@
+@startuml
+package "IEKart System" {
+  [Web UI] --> [API Server]
+  [API Server] --> [Database]
+}
+@enduml

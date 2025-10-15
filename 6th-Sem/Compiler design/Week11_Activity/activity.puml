@@ -1,0 +1,11 @@
+@startuml
+start
+:Search product;
+if (found?) then (yes)
+  :Add to cart;
+  :Checkout;
+else (no)
+  :show message;
+endif
+stop
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+actor Customer
+participant Web as "Web UI"
+participant App as "Application"
+participant DB as "Database"
+Customer -> Web: Place Order
+Web -> App: submitOrder()
+App -> DB: saveOrder()
+DB --> App: orderId
+App --> Web: confirmation
+Web --> Customer: show confirmation
+@enduml
