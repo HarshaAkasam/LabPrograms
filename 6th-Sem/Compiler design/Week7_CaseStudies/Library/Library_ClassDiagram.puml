@@ -1,7 +1,0 @@
-@startuml
-class Book { id: int; title: string; available: bool }
-class Member { id: int; name: string }
-class Library { books: List<Book> + addBook() + checkout() }
-Library --> Book
-Member --> Library : borrows
-@enduml

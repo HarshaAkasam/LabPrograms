@@ -1,9 +1,0 @@
-Use Case: Place Order
-Primary actor: Customer
-Preconditions: Customer logged in, items in cart
-Main flow:
- 1. Customer selects items
- 2. Customer proceeds to checkout
- 3. Customer provides shipping details
- 4. System processes payment and confirms order
-Alternate flow: Payment fails -> display error and allow retry
