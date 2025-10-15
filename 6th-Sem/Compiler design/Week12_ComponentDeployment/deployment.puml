@@ -1,0 +1,13 @@
+@startuml
+node "Web Server" {
+  component "Nginx" 
+}
+node "App Server" {
+  component "Node/Express"
+}
+node "DB Server" {
+  component "MongoDB"
+}
+Nginx -> "Node/Express"
+"Node/Express" -> "MongoDB"
+@enduml

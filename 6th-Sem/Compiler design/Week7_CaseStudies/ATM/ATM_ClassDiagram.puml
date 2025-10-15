@@ -1,0 +1,14 @@
+@startuml
+class Account {
+  - accountNumber: String
+  - pin: String
+  - balance: float
+  + deposit(amount)
+  + withdraw(amount)
+}
+class ATM {
+  + authenticate()
+  + dispenseCash()
+}
+Account <|-- ATM : uses
+@enduml

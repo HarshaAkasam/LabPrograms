@@ -1,0 +1,9 @@
+@startuml
+[*] --> Browsing
+Browsing --> Checkout : checkout()
+Checkout --> Payment : enterPayment()
+Payment --> Confirmed : paymentSuccess()
+Payment --> Failed : paymentFailed()
+Failed --> Payment : retry()
+Confirmed --> [*]
+@enduml
